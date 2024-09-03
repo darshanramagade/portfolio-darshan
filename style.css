@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #eef2f3;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #34495e;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+nav ul li a:hover {
+  background-color: #1abc9c;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h2 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  color: #2c3e50;
+  position: relative;
+  transition: transform 0.5s ease, font-weight 0.3s ease;
+  font-weight: normal;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #1abc9c;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+h2:hover {
+  transform: translateX(20px);
+  font-weight: bold;
+}
+
+h2:hover::after {
+  width: 100%;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+figure {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+figure img:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
+}
+
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  text-align: center;
+}
+
+figure {
+  margin: 30px auto;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+figure img:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+figcaption {
+  margin-top: 10px;
+  background-color: #222;
+  color: #0ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+.index-section {
+  text-align: justify;
+  margin: 20px;
+}
+
+.index-section h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+}
+
+.index-section p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portfolio-section {
+  text-align: justify;
+  margin: 20px;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+}
+
+.portfolio-section .projects-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-section .project {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-section .project p {
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portfolio-section img {
+  border-radius: 10px;
+}
+
+.about-section {
+  text-align: justify;
+  margin: 20px;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #2c3e50;
+}
+
+.about-section p {
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6;
+}
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+caption {
+  font-size: 1.5em;
+  padding: 10px;
+  color: #0ff;
+  background: #333;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+  border-bottom: 2px solid #0ff;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #0ff;
+  color: #f1f1f1;
+}
+
+th {
+  background: #444;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+tbody tr:hover {
+  background: #333;
+}
+
+tbody tr:nth-child(odd) {
+  background: #222;
+}
+
+figcaption {
+  margin-top: -40px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+figure img:hover + figcaption {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
+  background-color: #1abc9c;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  text-align: center;
+  position: relative;
+}
+
+.project h1 {
+  font-size: 1.5em;
+  color: #333;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+  margin-top: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project img:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff;
+}
+
+.project img:hover + h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 95%;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1abc9c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
